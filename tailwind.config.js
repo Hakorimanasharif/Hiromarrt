@@ -7,7 +7,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#ff5252',
+        primary: '#ff5252', // custom text color
+      },
+      backgroundColor: {
+        primary: '#ff5252', // custom background color
       },
     },
   },

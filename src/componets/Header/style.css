@@ -1,0 +1,10 @@
+.link-style {
+  color: black;
+  text-decoration: none;
+}
+
+.link-style:hover {
+  color: #1a202c; /* Tailwind gray-900 */
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
