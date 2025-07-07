@@ -2,23 +2,113 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
-   font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
+  background: #f5f0f0;
+  color: rgba(0, 0, 0, 0.7);
+  overflow-x: hidden;
 }
-.container{width: 90%; margin: auto;}
 
-*{
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+* {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
+
 .link:hover {
-  color: #ff5252;    
+  color: #ff5252;
 }
-.MuiBadge-badge{
-background-color: #ff5252 !important;
 
+.MuiBadge-badge {
+  background-color: #ff5252 !important;
+}
 
+nav button {
+  text-transform: capitalize !important;
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+
+nav button:hover {
+  text-transform: capitalize !important;
+  color: #ff5252 !important;
+}
+
+nav ul button .MuiTouchripple-root::after {
+  background-color: #ff5252 !important;
+}
+
+.sliderHome {
+  overflow: inherit !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 100%;
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 14px !important;
+  color: #000;
+}
+
+.homeCatSlider {
+  position: relative;
+  overflow: visible !important;
+}
+
+.homeCatSlider .swiper-button-prev,
+.homeCatSlider .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  width: 28px;
+  height: 28px;
+  margin-top: -14px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  z-index: 10;
+}
+.homeCatSlider .item{border: 1px solid rgba(0, 0, 0, 0.1);}
+
+.homeCatSlider .item:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.homeCatSlider .swiper-button-prev::after,
+.homeCatSlider .swiper-button-next::after {
+  font-size: 14px !important;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.homeCatSlider .swiper-button-prev:hover,
+.homeCatSlider .swiper-button-next:hover {
+  background-color: #ff5252;
+}
+
+.homeCatSlider .swiper-button-prev:hover::after,
+.homeCatSlider .swiper-button-next:hover::after {
+  color: white;
 }

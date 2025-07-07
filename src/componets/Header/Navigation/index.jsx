@@ -52,7 +52,7 @@ const Navigation = () => {
 
             {/* Navigation Links */}
             <div className="col_2 w-[60%]">
-              <ul className="flex items-center">
+              <ul className="flex items-center gap-3 nav">
                 <li className="list-none">
                   <Link
                     to="/"
@@ -71,7 +71,7 @@ const Navigation = () => {
                   </Link>
                 </li>
 
-                <li className="list-none">
+                <li className="list-none relative" >
                   <Link
                     to="/"
                     style={{
@@ -87,6 +87,76 @@ const Navigation = () => {
                   >
                     Fashion
                   </Link>
+
+                  <div
+  className="submenu absolute top-[120%] left-[0%] min-w-[150px] shadow-md opacity-0  transition-all "
+  style={{ backgroundColor: 'white', background: 'white !important' }}
+>
+
+                    <ul>
+                      <li className='list-none w-full relative'>
+                        <Link to="/" className='w-full'>
+                        <Button className='!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none'>Men</Button>
+
+                         <div
+  className="submenu absolute top-[0%] left-[100%] min-w-[150px] shadow-md opacity-0  transition-all "
+  style={{ backgroundColor: 'white', background: 'white !important' }}
+>
+
+                    <ul>
+                      <li className='list-none w-full'>
+                        <Link to="/" className='w-full'>
+                        <Button className='!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none'>T-shirt</Button>
+                        </Link>
+                      </li>
+                       <li className='list-none'>
+                        <Link to="/" className='w-full'>
+                        <Button className='!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none'>Jeans</Button>
+                        </Link>
+                      </li>
+                       <li className='list-none'>
+                        <Link to="/" className='w-full'>
+                        <Button className='!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none'>Footware</Button>
+                        </Link>
+                      </li>
+                       <li className='list-none'>
+                        <Link to="/" className='w-full'>
+                        <Button className='!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none'>Watch</Button>
+                        </Link>
+                      </li>
+                       <li className='list-none'>
+                        <Link to="/" className='w-full'>
+                        <Button className='!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none'>Pents</Button>
+                        </Link>
+                      </li>
+                     
+                    </ul>
+                  </div>
+                        </Link>
+                      </li>
+                       <li className='list-none'>
+                        <Link to="/" className='w-full'>
+                        <Button className='!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none'>Women</Button>
+                        </Link>
+                      </li>
+                       <li className='list-none'>
+                        <Link to="/" className='w-full'>
+                        <Button className='!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none'>Kids</Button>
+                        </Link>
+                      </li>
+                       <li className='list-none'>
+                        <Link to="/" className='w-full'>
+                        <Button className='!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none'>Girls</Button>
+                        </Link>
+                      </li>
+                       <li className='list-none'>
+                        <Link to="/" className='w-full'>
+                        <Button className='!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none'>Boys</Button>
+                        </Link>
+                      </li>
+                     
+                    </ul>
+                  </div>
                 </li>
 
                 <li className="list-none">
