@@ -81,7 +81,7 @@ const Header = () => {
           <div className='col1 w-[25%] relative top-2'>
            <Link to={"/"} className="mt-[10px] block">
   <img
-    src="https://serviceapi.spicezgold.com/download/1750047766437_logo.jpg"
+    src="/logo.png"
     alt="Hiromart Logo"
     className="w-[220px]"
   />
