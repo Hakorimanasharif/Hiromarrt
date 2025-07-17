@@ -8,6 +8,16 @@ import Tabs from '@mui/material/Tabs'
 import Tab from '@mui/material/Tab'
 import ProductsSlider from '../../componets/ProductsSlider'
 
+import {Swiper,SwiperSlide} from 'swiper/react'
+import 'swiper/css'
+import 'swiper/css/navigation'
+
+import { Navigation } from 'swiper/modules'
+
+import BlogItem from '../../components/BlogItem'
+
+import Footer from '../../components/Footer'
+
 const Home = () => {
   const [value, setValue] = React.useState(0)
 
@@ -132,13 +142,104 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Page spacing */}
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+
+
+
+
+
+
+
+
+      <section className='py-5'  style={{
+          backgroundColor: '#ffffff',
+          paddingTop: '30px',
+          paddingBottom: '20px',
+        }}>
+        <div className="container">
+             <h2 className="text-[20px] font-[600]">Latest Products</h2>
+          <ProductsSlider items={5}/>
+
+          <AdsBannerSlider items={3} />
+        </div>
+      </section>
+
+      <section className='py-5'  style={{
+          backgroundColor: '#ffffff',
+          paddingTop: '30px',
+          paddingBottom: '20px',
+        }}>
+        <div className="container">
+             <h2 className="text-[20px] font-[600]">Featured Products</h2>
+          <ProductsSlider items={5}/>
+
+          <AdsBannerSlider items={3} />
+        </div>
+      </section>
+
+
+
+
+      <section className='py-5 pb-8'  style={{
+          backgroundColor: '#ffffff',
+          paddingTop: '30px',
+          paddingBottom: '20px',
+          paddingBottom: '2rem'
+        }}>
+        <div className="container">
+          <h2 className='text-[20px] font-[600] mb-4'>From the blog</h2>
+          <Swiper 
+          slidesPerView={4}
+          spaceBetween={30}
+          navigation={true}
+          modules={[Navigation]}
+          className="blogslider"
+          >
+            <SwiperSlide>
+              <BlogItem />
+              </SwiperSlide>
+
+               <SwiperSlide>
+              <BlogItem />
+              </SwiperSlide>
+
+               <SwiperSlide>
+              <BlogItem />
+              </SwiperSlide>
+
+               <SwiperSlide>
+              <BlogItem />
+              </SwiperSlide>
+
+
+               <SwiperSlide>
+              <BlogItem />
+              </SwiperSlide>
+
+               <SwiperSlide>
+              <BlogItem />
+              </SwiperSlide>
+
+               <SwiperSlide>
+              <BlogItem />
+              </SwiperSlide>
+          </Swiper>
+        </div>
+      </section>
+
+
+
+      <Footer/>
+
+
+
+
+
+
+
+
+       
+
+
     </div>
   )
 }

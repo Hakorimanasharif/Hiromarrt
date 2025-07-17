@@ -16,7 +16,7 @@ const Navigation = () => {
 
   return (
     <>
-      <nav className="py-2">
+      <nav >
         <div className="container">
           <div
             className="container"
@@ -67,7 +67,8 @@ const Navigation = () => {
                     onMouseEnter={(e) => (e.target.style.color = '#16a34a')}
                     onMouseLeave={(e) => (e.target.style.color = 'black')}
                   >
-                    <Button className="!link transition text-black"> Home</Button>
+                    <Button className="!link transition text-[rgba(0,0,0,0.8)]
+                    !py-4"> Home</Button>
                   </Link>
                 </li>
 
