@@ -3,6 +3,9 @@ import HomeSlider from '../../componets/HomeSlider'
 import HomeCatSlider from '../../componets/HomeCatSlider'
 import { LiaShippingFastSolid } from 'react-icons/lia'
 import AdsBannerSlider from '../../componets/AdsBannerSlider'
+import AdsBannerSliderV2 from '../../componets/AdsBannerSliderV2'
+// Removed import of HomeBannerV2 as directory or file does not exist
+import BlogItem from '../../components/BlogItem'
 
 import Tabs from '@mui/material/Tabs'
 import Tab from '@mui/material/Tab'
@@ -14,9 +17,10 @@ import 'swiper/css/navigation'
 
 import { Navigation } from 'swiper/modules'
 
-import BlogItem from '../../components/BlogItem'
+// Removed duplicate import of BlogItem
 
-import Footer from '../../components/Footer'
+
+
 
 const Home = () => {
   const [value, setValue] = React.useState(0)
@@ -28,6 +32,15 @@ const Home = () => {
   return (
     <div>
       <HomeSlider />
+
+
+      {/*<section className='' style={{paddingTop:'1.5rem',paddingBottom:'1.5rem',}}>
+        <div className="container flex items-center">
+          <div className="part1 w-[75%]" >
+            <HomeBannerV2/>
+          </div>
+        </div>
+      </section>*/}
       <HomeCatSlider />
 
       {/* Popular Products + Tabs */}
@@ -131,13 +144,13 @@ const Home = () => {
 
             {/* Right: Price */}
             <p className="font-bold text-[20px] text-black mb-0">
-              - Only 20,000*
+              - Only 20,000 RWF*
             </p>
           </div>
 
           {/* Ads Banner */}
           <div className="w-[95%] mt-[50px]">
-            <AdsBannerSlider items={4} />
+            <AdsBannerSliderV2 items={4} />
           </div>
         </div>
       </section>
@@ -228,7 +241,7 @@ const Home = () => {
 
 
 
-      <Footer/>
+     
 
 
 

@@ -1,0 +1,21 @@
+.productItem {
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.productem .title {line-height: 20px;}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #ff5252; 
+  text-decoration: none;
+}
+
+.productItem .actions button:hover svg {
+  color: #fff !important;
+}
